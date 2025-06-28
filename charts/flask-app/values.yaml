@@ -1,0 +1,10 @@
+replicaCount: 2
+
+image:
+  repository: 192.168.122.1:5000/flask-app
+  tag: latest
+
+service:
+  type: NodePort
+  port: 80
+  nodePort: 30083
